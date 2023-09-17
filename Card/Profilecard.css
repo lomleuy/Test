@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+    width: 100%;
+}
+body{
+    background:#f3f5fa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+    font-family: 'Playfair',sans-serif;
+}
+.container{
+    width: 1100px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    gap: 2rem;
+}
+.card-data{
+    display: flex;
+    background:#212f3d;
+    padding: 3rem;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    transition: all 0.9s ease-in-out;
+}
+.card-data:hover{
+    transform: translateY(-10px);
+}
+.card-data img{
+    width: 60%;
+    height: 100%;
+    border-radius: 05%;
+}
+.pro-content{
+    padding-left: 1rem;
+}
+.pro-content h2{
+    color: #e74c3c;
+    font-size: 1.5rem;
+    
+}
+.position{
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+/*.position::after{
+    content: '';
+    background: #ccc;
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    left: 32rem;
+}*/
+
+.social_icons span{
+    background: #f3f5fa;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.social_icons span i{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    color: #212f3d;
+}
+.social_icons span i:hover{
+    background:#212f3d;
+    color: #fff;
+    border-radius: 50%;
+}
+@media screen and (max-width:1100px) {
+    .container{
+        max-width: 980px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:962px) {
+.container{
+    max-width: 650px;
+    margin: 0 auto;
+}
+.card-container{
+    grid-template-columns: repeat(1,1fr);
+}
+}   
