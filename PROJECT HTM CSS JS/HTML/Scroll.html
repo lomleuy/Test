@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            min-height: 100vh;
+            background: #f2f2f2;
+        }
+        .slidbar{
+            position: absolute;
+            left:0;
+            top: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 5px 0 20px;
+
+            
+        }
+        
+        .scrollbox{
+           overflow: auto;
+           padding-right: 10px;
+        }
+        .scrollbox-inner p{
+            color: red;
+            font-size: 1rem;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: #000;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar{
+            width: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="slidbar">
+        <header>
+            <h2>Menu Bar</h2>
+
+        </header>
+        <div class="scrollbox">
+            <div class="scrollbox-inner">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus earum maxime, perspiciatis sed provident tenetur nobis possimus, nisi nulla unde vero. Recusandae sunt praesentium adipisci veritatis, quam facere labore deleniti?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi adipisci libero animi cum, in aut incidunt quas explicabo fugit, harum quaerat, quidem placeat veritatis. Quasi inventore vero nihil repudiandae possimus.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus accusamus ad quibusdam facilis, aut placeat dignissimos. Dolorem nemo perspiciatis eius officiis saepe quas asperiores nobis harum incidunt accusantium, dolores quaerat.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit et quos ipsum, quibusdam officia accusamus, molestiae amet quam laboriosam architecto commodi nemo placeat iste rem quis obcaecati repellat recusandae sequi.  
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, odio! Mollitia adipisci assumenda pariatur ex tempore dolorem modi sed officiis? Blanditiis iure deleniti quisquam possimus! Hic laborum ex sunt quidem?
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex, sapiente praesentium, est quo modi cum molestias quasi dignissimos odio architecto voluptatum consequuntur optio veniam hic? Porro cupiditate magnam fugit!
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, quam minus obcaecati officia inventore ut ullam? Tempora labore rem earum impedit! Dolorum illo consequatur quam nisi quod, distinctio fugit odit.  
+                </p>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

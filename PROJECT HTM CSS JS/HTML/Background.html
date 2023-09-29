@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/Background.css">
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+     <button id="openform">Login</button>
+     <div class="container" id="around">
+        <form action="" class="form_control" id="form">
+            <div class="icons">
+                <i class="fa-solid fa-moon" id="darkmoon"></i>
+            </div>
+            <div class="image">
+                <span onclick="document.getElementById('around').style.display='none'" class="close" title="close form">&times;</span>
+                <img src="../IMAGE/Pizza snakesalad.jpg" alt="" class="img">
+            </div>
+            <label for="user" >User Name</label>
+            <input type="text" placeholder="Enter your name..." required id="user">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Enter your email..." required id="email">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Enter your password..." required id="password">
+            <button type="submit" id="sub">Login</button>
+            <div class="mix">
+                <button type="button" id="cancel" onclick="document.getElementById('around').style.display='none'">Cancel</button>
+            <span class="pass">Forgot 
+                <a href="#"> password ?</a>
+            </span>
+            </div>
+            
+        </form>
+     </div>
+     
+     <script src="../JS/Background.js">
+        
+     </script>
+</body> 
+</html>

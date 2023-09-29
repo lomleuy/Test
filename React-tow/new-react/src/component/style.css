@@ -1,0 +1,5 @@
+.more{
+    display: grid; 
+    gap: 2rem 1rem;
+    padding-bottom: 2rem;
+}

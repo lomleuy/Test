@@ -1,0 +1,26 @@
+button{
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor:pointer;
+    transition:opacity 0.4s;
+
+}
+button:hover{
+    opacity:0.8;
+}
+button i{
+    color: #fff;
+    font-size: 1.4em;
+}
+.icon-active {
+    background:#24292e;
+}
+button.twitter{
+    color:#1da1f2;
+}
+button.pinterest{
+    color:#d3263a;
+}

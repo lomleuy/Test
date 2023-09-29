@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #modal{
+            background-color: #ddd;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            width: 200px;
+            height: 100px;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content:space-between;
+            animation-name: animated;
+            animation-duration: .8s;
+        }
+        #close-btn{
+            color: red;
+            font-size: 3rem;
+            cursor: pointer;
+        }
+        #modal-container{
+            position: fixed;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background:rgba(236, 230, 230, 0.84);
+            display: none;
+        }
+        @keyframes animated {
+            from{
+                top:100px;
+                opacity: 0;
+            }
+            to{
+                top:50%;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button id="openbtn">What ?</button>
+    <div id="modal-container">
+        <div id="modal">
+            <p>Here I am</p>
+            <div id="close-btn">&times;</div>
+        </div>
+    </div>
+    <script>
+        let openbtn=document.getElementById("openbtn");
+        let modal_container=document.getElementById("modal-container");
+        let closebtn=document.getElementById("close-btn");
+        openbtn.addEventListener("click",function(){
+            modal_container.style.display="block";
+        })
+        closebtn.addEventListener("click",function(){
+            modal_container.style.display="none";
+        })
+        window.addEventListener("click",function(e){
+            if(e.target===modal_container){
+                modal_container.style.display="none";
+            }
+        })
+    </script>
+</body>
+</html>

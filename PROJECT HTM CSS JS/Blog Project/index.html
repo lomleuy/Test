@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog project</title>
+    <link rel="stylesheet" href="../Blog Project/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+</head>
+<body class="main-content">
+    <header class="section sec1 header active">
+
+    </header>
+    <main>
+        <div class="social">
+            <button class=" icon-active gibup"><i class="fab fa-github"></i></button>
+            <button class=" icon twitter"><i class="fab fa-twitter"></i></button>
+            <button class=" icon pinterest"><i class="fab fa-pinterest-p"></i></button>
+        </div>
+    </main>
+    <script>
+        let iconbtn=document.querySelectorAll('.icon');
+        function Testing(){
+            for(let i=0;i<iconbtn.length;i++){
+                iconbtn[i].addEventListener('click',function(){
+                   let change=document.querySelectorAll('.icon-active');
+                   change[0].className=change[0].className.replace("icon-active",'');
+                   this.className+=' icon-active';
+                });
+            };
+        };
+        Testing();
+    </script>
+</body>
+</html>
